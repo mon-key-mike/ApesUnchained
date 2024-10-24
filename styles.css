@@ -3,9 +3,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
-    color: #333;
-    text-align: center;  /* Center text */
+    background-color: #0b02bf; /* Set background to blue */
+    color: #ffcc00;
+    text-align: center;
 }
 
 a {
@@ -18,7 +18,7 @@ a:hover {
 }
 
 h1, h2 {
-    color: #333;
+    color: #ffcc00;
 }
 
 h2 {
@@ -78,42 +78,32 @@ nav ul li a {
     font-size: 1.2em;
 }
 
-/* Main Content */
-.container {
+/* Main Content: Wrapper and Columns */
+.content-wrapper {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Center the content */
+    justify-content: center;
     padding: 20px;
     margin: 0 auto;
-    max-width: 1200px;
 }
 
-.section-content {
+.columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Add space between columns */
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.column {
     background-color: #006400;
     color: #ffcc00;
     padding: 30px;
     border-radius: 15px;
-    margin-bottom: 40px;
-    width: 100%;
-    max-width: 800px;
+    width: 30%;
+    box-sizing: border-box;
 }
 
-.main-content {
-    flex: 1;
-    max-width: 800px;
-}
-
-/* Sidebar */
-.sidebar {
-    flex: 1;
-    max-width: 300px;
-    background-color: #eee;
-    padding: 20px;
-    border-radius: 15px;
-    margin: 0 auto;
-}
-
-/* Image Box */
 .image-box {
     margin-top: 20px;
 }
@@ -122,6 +112,21 @@ nav ul li a {
     max-width: 100%;
     height: auto;
     border-radius: 15px;
+}
+
+/* Minting Section */
+.minting-area {
+    background-color: #8b4513;
+    color: #ffcc00;
+    padding: 50px 20px;
+    border-radius: 15px;
+    max-width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.minting-area iframe {
+    margin-top: 20px;
 }
 
 /* Footer */
@@ -134,7 +139,7 @@ footer {
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    .container {
+    .columns {
         flex-direction: column;
     }
 
