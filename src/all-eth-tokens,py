@@ -1,0 +1,12 @@
+import requests
+
+url = "https://api-mainnet.magiceden.dev/v3/rtp/chain/tokens/v6?sortBy=floorAskPrice&limit=20&includeTopBid=false&excludeEOA=false&includeAttributes=false&includeQuantity=false&includeDynamicPricing=false&includeLastSale=false&normalizeRoyalties=false"
+
+headers = {
+    "accept": "*/*",
+    "Authorization": "Bearer YOUR_API_KEY"
+}
+
+response = requests.get(url, headers=headers)
+
+print(response.text)
