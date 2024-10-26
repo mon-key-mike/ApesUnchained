@@ -1,1 +1,39 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ base_path }}/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ base_path }}/">Home</a></li>
+                <li><a href="{{ base_path }}/about.html">About</a></li>
+                <li><a href="{{ base_path }}/blog.html">Blog</a></li>
+                <li><a href="{{ base_path }}/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <h3>Sidebar</h3>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </aside>
+        <article>
+            <h1>{{ title }}</h1>
+            {{ content }}
+        </article>
+    </main>
+    <footer>
+        <p>&copy; {{ current_year }} {{ author }}. All rights reserved.</p>
+    </footer>
+</body>
+</html>
