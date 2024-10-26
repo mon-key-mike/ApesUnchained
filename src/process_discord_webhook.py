@@ -31,4 +31,11 @@ def process_discord_webhook(data):
 def main(json_data):
     data = json.loads(json_data)
     processed_data = process_discord_webhook(data)
-    output_path = 
+    output_path = f"content/{processed_data['date']}-{processed_data['title'].lower().replace(' ', '-')}.md"
+    generate_markdown_content('content/template.md', output_path, processed_data)
+
+if __name__ == "__main__":
+    if len(sys.argv) > 1:
+        main(sys.argv[1])
+    else:
+        print("No data provided")
