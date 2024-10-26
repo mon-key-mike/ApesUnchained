@@ -5,7 +5,7 @@ on:
       - main
   workflow_dispatch:
   repository_dispatch:
-    types: [update-content]
+    types: [discord-webhook]
 
 jobs:
   build-and-deploy:
@@ -24,9 +24,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Process new data (if any)
+      - name: Process Discord webhook data
         if: github.event_name == 'repository_dispatch'
-        run: python src/process_data.py '${{ toJson(github.event.client_payload) }}'
+        run: python src/process_discord_webhook.py '${{ toJson(github.event.client_payload) }}'
 
       - name: Build site
         run: python src/makesite.py
