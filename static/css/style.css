@@ -1,1 +1,170 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0b02bf; /* Set background to blue */
+    color: #ffcc00;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #ffcc00;
+}
+
+a:hover {
+    color: #ff6600;
+}
+
+h1, h2 {
+    color: #ffcc00;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+/* Header Styles */
+header {
+    background-color: #006400;
+    color: #ffcc00;
+    height: 175px; /* Restrict header height */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.1em;
+}
+
+/* Call to Action Buttons */
+.button {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: #ff6600;
+}
+
+/* Navigation Menu */
+nav {
+    background-color: #8b4513;
+    text-align: center;
+    padding: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffcc00;
+    font-size: 1.2em;
+}
+
+/* Main Content: Wrapper and Columns */
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Add space between columns */
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.column {
+    background-color: #006400;
+    color: #ffcc00;
+    padding: 30px;
+    border-radius: 15px;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+.image-box {
+    margin-top: 20px;
+}
+
+.image-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Minting Section */
+.minting-area {
+    background-color: #8b4513;
+    color: #ffcc00;
+    padding: 50px 20px;
+    border-radius: 15px;
+    max-width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    max-width: 100%;
+    margin: 20px 0;
+}
+
+#iframe-widget {
+    width: 100%;
+    max-width: 700px;  /* Set a maximum width to ensure proper layout on large screens */
+    height: 515px;     /* Maintain a standard height for the iframe */
+    border: none;
+    border-radius: 10px;  /* To match the rest of the rounded design */
+}
+
+/* Footer */
+footer {
+    background-color: #006400;
+    color: #ffcc00;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .columns {
+        flex-direction: column;
+    }
+
+    #iframe-widget {
+        max-width: 100%;
+        height: auto;  /* Adjust height on smaller screens */
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
 
