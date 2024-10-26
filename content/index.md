@@ -1,4 +1,14 @@
+# Welcome to ApesUnchained
 
+We are unleashing the power of apes through technology and innovation!
+
+![Apes Unchained]({{ base_path }}/img/apes-unchained.gif)
+
+## Latest Updates
+
+- New blockchain integration for ape tracking
+- Virtual reality training for aspiring apes
+- Banana-powered quantum computing research
 title: Welcome to Apes Unchained
 date: 2023-04-20
 
