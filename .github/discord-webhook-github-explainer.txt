@@ -1,0 +1,7 @@
+
+This setup allows you to:
+1. Post content directly from your Discord server.
+2. Automatically process the Discord messages and generate new content for your site.
+3. Deploy the updated site using GitHub Actions.
+
+This approach leverages Discord for content input, a secure bridge server for verification, and GitHub Actions for deployment. It provides a user-friendly way to update your site content directly from Discord while maintaining security and automation.
